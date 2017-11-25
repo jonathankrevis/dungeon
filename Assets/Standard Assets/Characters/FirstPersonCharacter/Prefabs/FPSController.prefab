@@ -7,17 +7,17 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 400000}
+  - component: {fileID: 224380898135362190}
   - component: {fileID: 14300000}
   - component: {fileID: 11400000}
   - component: {fileID: 114827641798928846}
   - component: {fileID: 5400000}
   - component: {fileID: 8200000}
   - component: {fileID: 136815025068609406}
-  - component: {fileID: 114942222283613662}
+  - component: {fileID: 222339811704296620}
   m_Layer: 0
   m_Name: FPSController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,20 +40,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &400000
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 0.99461275, z: 0, w: 0.1036608}
-  m_LocalPosition: {x: 60.511745, y: 0.98, z: 62.638016}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 400002}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &400002
 Transform:
   m_ObjectHideFlags: 1
@@ -64,7 +50,7 @@ Transform:
   m_LocalPosition: {x: -0.011409861, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 400000}
+  m_Father: {fileID: 224380898135362190}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &2000000
@@ -354,18 +340,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pv: 100
---- !u!114 &114942222283613662
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00668a5eea6f14a73bad82613ceb8d3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pv: 0
+  DamageSound: {fileID: 8300000, guid: 8e8ef16a422824ebfb0d5fb7b17aa031, type: 3}
+  DeathSound: {fileID: 8300000, guid: af05a415f0cee4b38b38441559b353d2, type: 3}
 --- !u!136 &136815025068609406
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -379,3 +355,28 @@ CapsuleCollider:
   m_Height: 1.98
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!222 &222339811704296620
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+--- !u!224 &224380898135362190
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 52.33}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400002}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 61.37, y: 4.38}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}

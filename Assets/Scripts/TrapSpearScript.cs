@@ -18,7 +18,6 @@ public class TrapSpearScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		timer += Time.deltaTime;
-		Debug.Log(timer);
 
 		if (timer > SpeedOccurence)
 		{
