@@ -7,6 +7,7 @@ public class DamageScript : MonoBehaviour {
 	public int Pv;
 	public AudioClip DamageSound; 
 	public AudioClip DeathSound; 
+	public AudioClip HealSound; 
 	private AudioSource AudioSource;
 
 	public virtual void Damage(int d) {
@@ -20,6 +21,18 @@ public class DamageScript : MonoBehaviour {
 			AudioSource.clip = DamageSound;
 			AudioSource.Play();
 		}
+	}
+
+	public virtual void Heal(int d) {
+		if (Pv + d >= 100) {
+			Pv = 100;
+		} else {
+			Pv += d;
+		}
+
+		AudioSource.clip = HealSound;
+		AudioSource.Play();
+		Debug.Log(Pv);
 	}
 
 	// Use this for initialization

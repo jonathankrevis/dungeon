@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class PlayerDungeonScript : DamageScript {
 
-	public AudioClip DamageSound; 
-	public AudioClip DeathSound; 
-	private AudioSource AudioSource;
+//	public AudioClip DamageSound; 
+//	public AudioClip DeathSound; 
+//	private AudioSource AudioSource;
 
 	// Use this for initialization
 	void Start () {
-		AudioSource = GetComponent<AudioSource>();
+//		AudioSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
