@@ -8,6 +8,7 @@ TagManager:
   - Master
   - Slave
   - Enemy
+  - Arrow
   layers:
   - Default
   - TransparentFX

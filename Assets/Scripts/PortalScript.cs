@@ -21,8 +21,11 @@ public class PortalScript : MonoBehaviour {
 	{
 		if (c.tag == "Player")
 		{
-			c.transform.position = MoveToNextPortalPosition.position;
-			OldPlaceToDisable.SetActive(false);
+			if (MoveToNextPortalPosition)
+				c.transform.position = MoveToNextPortalPosition.position;
+
+			if (OldPlaceToDisable)
+				OldPlaceToDisable.SetActive(false);
 		}
 	}
 }

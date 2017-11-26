@@ -21,8 +21,9 @@ public class PotionHealth : MonoBehaviour {
 		if (c.gameObject.GetComponent<DamageScript>())
 		{
 			c.gameObject.GetComponent<DamageScript>().Heal(Healvalue);
+
+			Destroy(gameObject);
 		}
 
-		Destroy(gameObject);
 	}
 }
